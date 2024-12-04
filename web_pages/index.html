@@ -13,7 +13,6 @@
         body {
             height: 1500px;
         }
-<<<<<<< HEAD
 
         .shell {
             width: 100%;
@@ -58,10 +57,6 @@
     </style>
 </head>
 
-=======
-    </style>
-</head>
->>>>>>> d83b308f1b6c6d811341f27749815c841f8322f7
 <body>
     
     <div class="shell">
@@ -70,7 +65,6 @@
         </header>
         <div class="main">
             <h2>Cinema Management System</h2>
-<<<<<<< HEAD
             <img src="../static/4.png" alt="">
         </div>
     </div>
@@ -86,16 +80,16 @@
     function updateHeaderClipPath() {
 
          // 动态更新clip-path
-        const clipPathValue = 'polygon(0 0, 100% 0%, 100% ${scrollDistance <= 600 ? 100 - ((scrollDistance / 600) * 60) : 75}%, 0 100%)';
+        const clipPathValue = `polygon(0 0, 100% 0%, 100% ${scrollDistance <= 600 ? 100 - ((scrollDistance / 600) * 60) : 75}%, 0 100%)`;
         header.style.clipPath = clipPathValue;
 
         // 动态更新图像缩放
         const scaleValue = 1 + (scrollDistance / 600);
-        img.style.transform = 'scale(${scaleValue})';
+        img.style.transform = `scale(${scaleValue})`;
 
          // 动态更新透明度
         const opacityValue = (scrollDistance / 600);
-        img.style.opacity = opacityValue;
+        //img.style.opacity = opacityValue;
     }
 
     function scrollHandler(event) {
@@ -118,10 +112,4 @@
 
 </script>
 
-=======
-            <img src="./3.jpg" alt="">
-        </div>
-    </div>
-</body>
->>>>>>> d83b308f1b6c6d811341f27749815c841f8322f7
 </html>
